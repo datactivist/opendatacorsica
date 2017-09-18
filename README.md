@@ -1,4 +1,4 @@
-[Open Data Corsica Cunfarenze - Aiacciu - 7 &amp; 8 sittembre 2017](http://www.opendata.corsica/Programme-Seminaire-Ouverture-des-donnees-publiques-OPENDATA-CORSICA-les-7-et-8-septembre-2017-au-Palais-des-congres-d_a46.html)
+[![](https://raw.githubusercontent.com/datactivist/opendatacorsica/master/img/15397975-21206096.jpg)](http://www.opendata.corsica/Programme-Seminaire-Ouverture-des-donnees-publiques-OPENDATA-CORSICA-les-7-et-8-septembre-2017-au-Palais-des-congres-d_a46.html)
 
 Interventions de Samuel Goëta lors du séminaire Open Data Corsica : 
 ## [Jeudi 7 septembre - 16h-17h - De l'open data de l'offre à l'open data de la demande](https://github.com/datactivist/opendatacorsica/raw/master/Goeta-opendatacorsica.pdf)
