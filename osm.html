@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apprendre à contribuer sans contribuer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuel Goëta, Datactivist" />
+    <link href="libs/remark-css-0.0.1/example.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Apprendre à contribuer sans contribuer
+## Exploration de la base de données OSM avec Overpass-Turbo
+### Samuel Goëta, Datactivist
+### State of the Map, Avignon, 02/06/2017
+
+---
+
+class: center, middle
+
+Retrouvez les matériaux sur https://github.com/datactivist/opendatacorsica/
+
+Ces slides en ligne : http://datactivi.st/opendatacorsica/osm.html/
+
+Les contenus créés par Datactivist sont placés sous [licence Creative Commons CC-BY-SA](https://creativecommons.org/licenses/by-sa/3.0/deed.fr). 
+
+&lt;img src="./img/Logo_DATACTIVIST_TW.png" height="100px" /&gt;
+
+---
+#Objectifs de l'atelier
+
+.pull-left[
+* Découvrir le fonctionnement des tags dans OSM 
+
+* Montrer les données derrière la carte
+
+* Apprécier la richesse de la base de données d'OpenStreetMap
+
+* Inciter à contribuer]
+.pull-right[![](img/Openstreetmap_logo.png)]
+
+---
+#A qui ça s'adresse ?
+.pull-left[
+![](./img/qui.jpg)
+]
+.pull-right[
+* Novices qui découvrent OSM et veulent apprendre à contribuer
+
+* Porteurs/ses de projets qui cherchent des données
+
+* Contributeurs/trices pour détecter les angles morts dans les données OSM 
+
+* Producteurs/trices de données publiques qui détiennent des données utiles à la communauté OSM
+
+* Médiateurs/trices qui veulent former à OSM en quelques minutes]
+---
+#Déroulé de l'atelier
+
+L'atelier dure 30 minutes : 
+
+* Découverte des tags dans OSM 
+
+* Exercice de recherche de tags 
+
+* Présentation du fonctionnement d'Overpass Turbo 
+
+* Exercice : faire des requetes ciblées dans OSM 
+
+.footnote[
+Pour une présentation plus large sur les données crowdsourcées : https://github.com/datactivist/formation_crowdsourcing_poitiers]
+---
+# Petite histoire d'OSM 
+
+.pull-left[
+
+* 2004 : lancement par Steve Coast
+
+* Fin 2005 : 1000 usagers
+
+* Aout 2006 : création de la fondation OpenStreetMap
+
+* Décembre 2006 : ajout des images satellite de Yahoo
+
+* Janvier 2013 : 1 million de contributeurs
+
+* Mai 2013 : possibilité de contribuer directement depuis le site
+
+* Mai 2015 : 2 millions de contributeurs
+]
+.pull-right[
+![](./img/users.png)]
+---
+#Les objets d'OpenStreetMap
+.reduite2[.center[![](img/nodes.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+---
+#Un monde de tags
+.reduite[.center[![](img/tags.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+---
+#Le principe d'un tag : KEY=VALUE
+.reduite2[.center[![](img/keyvalue.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+---
+##« Elements cartographiques » : la bible des tags
+.reduite2[.center[[![](img/mapfeature.png)](http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques)]]
+.footnote[http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques]
+---
+## Comment cartographier un ... ? 
+.reduite2[.center[![comment](img/comment.png)]]
+.footnote[[Lien vers la page wiki](http://wiki.openstreetmap.org/wiki/FR:Comment_cartographier_un..)]
+---
+## Exercice : trouver les tags suivants
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+
+]
+
+---
+## Solution : trouver les tags suivants
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+]
+.pull-right[
+1. Highway=motorway 
+
+2. highway=cycleway ou cycleway=*
+
+3. Tourism=museum
+
+4. Aeroway=aerodrome
+
+5. Shop=bakery]
+---
+##Découverte d’Overpass
+.reduite[![](img/overpass.png)]
+.footnote[http://overpass-turbo.eu]
+---
+#Exercice : cartographier les éléments suivants
+
+
+* Les boulangeries à Poitiers
+
+* Les pistes cyclables à Auxerre
+
+* Les aéroports en (feu) Poitou-Charentes
+
+* Les boites aux lettres à Aix en Provence 
+
+**Plus dur :**
+
+* Les lignes électriques en corse
+
+* Les « potelets » à Marseille
+---
+#On en fait quoi maintenant ? 
+.reduite[![](img/umap.png)]
+.footnote[http://http://umap.openstreetmap.fr]
+---
+# Comment collecter des données sur le terrain ?
+.reduite[![](img/entree.png)]
+---
+# Comment soumettre des données ?
+.reduite[![](img/soum.png)]
+---
+class:inverse, middle, center
+# Merci
+
+Me contacter : samuel@datactivi.st
+
+Suggestions : https://github.com/datactivist/atelier-osm/issues
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('showSlide', function (slide) {setTimeout(function() {window.dispatchEvent(new Event('resize'));}, 100)});</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
